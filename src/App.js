@@ -7,6 +7,7 @@ import Budget from './components/Budget';
 
 // Add code to import the other components here under
 import Remaining from './components/Remaining';
+import Location from './components/Location';
 import ExpenseTotal from './components/ExpenseTotal';
 import ExpenseList from './components/ExpenseList';
 
@@ -17,7 +18,7 @@ const App = () => {
     return (
         <AppProvider>
             <div className='container'>
-                <h1 className='mt-3'>Company's Budget Allocation</h1>
+                <h1 className='mt-3'>Company's Budget Allocation (By, Md Mehedi Hasan)</h1>
                     <div className='row mt-3'>
                     
                      <div className='col-sm'>
@@ -32,9 +33,13 @@ const App = () => {
                                
 
                    
-                                             <div className='col-sm'>
-                                             <ExpenseTotal />
-                                              </div>
+                     <div className='col-sm'>
+                    <ExpenseTotal />
+                      </div>
+
+                      <div className='col-sm'>
+                    <Location />
+                      </div>
                            
                        
                     
